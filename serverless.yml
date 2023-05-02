@@ -1,0 +1,17 @@
+service: lambda-iot-device-sdk-repro
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  IotFunction:
+    handler: index.handler
+    events:
+      - http:
+          path: /iot
+          method: get
