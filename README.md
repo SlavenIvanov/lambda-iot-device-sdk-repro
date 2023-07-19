@@ -24,7 +24,7 @@
 }
 ```
 2. Take note of the AWS IoT endpoint in the Settings tab of the AWS IoT console
-2. Open `index.js` and replace values of **cfg** with your own
+2. Open `IotFunction.ts` and replace values of **cfg** with your own
 ```js
 const cfg = {
   endpoint: "<AWS_IOT_ENDPOINT>",

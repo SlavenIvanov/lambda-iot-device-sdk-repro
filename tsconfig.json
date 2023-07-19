@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "inlineSourceMap": true,
+    "outDir": ".build",
+    "target": "ES2015",
+    "module": "ES2015",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "lib": ["ES2015"],
+    "types": ["node"],
+    "rootDir": "./",
+    "allowJs": true,
+    "alwaysStrict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["./src/**/*"]
+}

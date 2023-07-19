@@ -1,16 +1,18 @@
 service: lambda-iot-device-sdk-repro
 frameworkVersion: '3'
 
+
 provider:
   name: aws
   runtime: nodejs16.x
 
 plugins:
+  - serverless-webpack
   - serverless-offline
 
 functions:
   IotFunction:
-    handler: index.handler
+    handler: src/IotFunction.handler
     events:
       - http:
           path: /iot

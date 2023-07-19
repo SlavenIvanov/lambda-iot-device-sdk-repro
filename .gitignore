@@ -5,6 +5,9 @@ jspm_packages
 # Serverless directories
 .serverless
 
+#Webpack
+.webpack
+
 # AWS IoT keys and certs
 *.crt
 *.key
