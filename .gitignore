@@ -11,3 +11,6 @@ jspm_packages
 # AWS IoT keys and certs
 *.crt
 *.key
+
+#build
+.build

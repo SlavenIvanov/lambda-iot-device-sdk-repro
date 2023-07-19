@@ -22,15 +22,14 @@ module.exports = {
   module: {
     rules: [
       { test: /\.(ts|js)x?$/, exclude: /node_modules/, use: ["ts-loader"] },
-      // TODO Possible fix for native modules
-      // ,
-      //   {
-      //     test: /\.node$/,
-      //     loader: 'node-loader',
-      //     options: {
-      //       name: '[path][name].[ext]'
-      //     }
-      //   }
+      // TODO possible to use node-loader to load native modules
+      // {
+      //   test: /\.node$/,
+      //   loader: "node-loader",
+      //   options: {
+      //     name: "[path][name].[ext]",
+      //   },
+      // },
     ],
   },
   stats: {
